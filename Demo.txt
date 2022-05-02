@@ -1,1 +1,166 @@
-hii
+
+SANKET@DESKTOP-0MNTMTR MINGW64 ~/Desktop/Git WorkSpace
+$ git init
+Initialized empty Git repository in C:/Users/SANKET/Desktop/Git WorkSpace/.git/
+
+SANKET@DESKTOP-0MNTMTR MINGW64 ~/Desktop/Git WorkSpace (master)
+$ git init
+Reinitialized existing Git repository in C:/Users/SANKET/Desktop/Git WorkSpace/.git/
+
+SANKET@DESKTOP-0MNTMTR MINGW64 ~/Desktop/Git WorkSpace (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Demo.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+SANKET@DESKTOP-0MNTMTR MINGW64 ~/Desktop/Git WorkSpace (master)
+$ git add --a
+
+SANKET@DESKTOP-0MNTMTR MINGW64 ~/Desktop/Git WorkSpace (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   Demo.txt
+
+
+SANKET@DESKTOP-0MNTMTR MINGW64 ~/Desktop/Git WorkSpace (master)
+$ git commit -m "First Commit"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'SANKET@DESKTOP-0MNTMTR.(none)')
+
+SANKET@DESKTOP-0MNTMTR MINGW64 ~/Desktop/Git WorkSpace (master)
+$ git config --global user.email "sanketdhole133@gmail.com"
+
+SANKET@DESKTOP-0MNTMTR MINGW64 ~/Desktop/Git WorkSpace (master)
+$ git config --global user.name "dholesanket123"
+
+SANKET@DESKTOP-0MNTMTR MINGW64 ~/Desktop/Git WorkSpace (master)
+$ git remote add origin https://github.com/dholesanket123/Product_Mangement_System.git
+
+SANKET@DESKTOP-0MNTMTR MINGW64 ~/Desktop/Git WorkSpace (master)
+$ git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+
+SANKET@DESKTOP-0MNTMTR MINGW64 ~/Desktop/Git WorkSpace (master)
+$  git push --set-upstream origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/dholesanket123/Product_Mangement_System.git'
+
+SANKET@DESKTOP-0MNTMTR MINGW64 ~/Desktop/Git WorkSpace (master)
+$  git remote add origin https://github.com/dholesanket123/Product_Mangement_System.git
+error: remote origin already exists.
+
+SANKET@DESKTOP-0MNTMTR MINGW64 ~/Desktop/Git WorkSpace (master)
+$ git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+
+SANKET@DESKTOP-0MNTMTR MINGW64 ~/Desktop/Git WorkSpace (master)
+$  git push --set-upstream origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/dholesanket123/Product_Mangement_System.git'
+
+SANKET@DESKTOP-0MNTMTR MINGW64 ~/Desktop/Git WorkSpace (master)
+$ ^C
+
+SANKET@DESKTOP-0MNTMTR MINGW64 ~/Desktop/Git WorkSpace (master)
+$ git branch -M main
+
+SANKET@DESKTOP-0MNTMTR MINGW64 ~/Desktop/Git WorkSpace (main)
+$ git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/dholesanket123/Product_Mangement_System.git'
+
+SANKET@DESKTOP-0MNTMTR MINGW64 ~/Desktop/Git WorkSpace (main)
+$ git push
+fatal: The current branch main has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin main
+
+
+SANKET@DESKTOP-0MNTMTR MINGW64 ~/Desktop/Git WorkSpace (main)
+$ ^C
+
+SANKET@DESKTOP-0MNTMTR MINGW64 ~/Desktop/Git WorkSpace (main)
+$  git push --set-upstream origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/dholesanket123/Product_Mangement_System.git'
+
+SANKET@DESKTOP-0MNTMTR MINGW64 ~/Desktop/Git WorkSpace (main)
+$  git push --set-upstream origin upstream
+error: src refspec upstream does not match any
+error: failed to push some refs to 'https://github.com/dholesanket123/Product_Mangement_System.git'
+
+SANKET@DESKTOP-0MNTMTR MINGW64 ~/Desktop/Git WorkSpace (main)
+$ git commit -m "Initial commit"
+[main (root-commit) af5108e] Initial commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 Demo.txt
+
+SANKET@DESKTOP-0MNTMTR MINGW64 ~/Desktop/Git WorkSpace (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+SANKET@DESKTOP-0MNTMTR MINGW64 ~/Desktop/Git WorkSpace (main)
+$ git push --set-upstream origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/dholesanket123/Product_Mangement_System.git'
+
+SANKET@DESKTOP-0MNTMTR MINGW64 ~/Desktop/Git WorkSpace (main)
+$ git push heroku HEAD:master
+fatal: 'heroku' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+SANKET@DESKTOP-0MNTMTR MINGW64 ~/Desktop/Git WorkSpace (main)
+$ git push Product_Mangement_System HEAD:master
+fatal: 'Product_Mangement_System' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+SANKET@DESKTOP-0MNTMTR MINGW64 ~/Desktop/Git WorkSpace (main)
+$ git clone https://github.com/saurabhnavghare/Product-Management-App.git
+Cloning into 'Product-Management-App'...
+remote: Enumerating objects: 24, done.
+remote: Counting objects: 100% (24/24), done.
+remote: Compressing objects: 100% (16/16), done.
+remote: Total 24 (delta 4), reused 18 (delta 1), pack-reused 0
+Receiving objects: 100% (24/24), done.
+Resolving deltas: 100% (4/4), done.
+
+SANKET@DESKTOP-0MNTMTR MINGW64 ~/Desktop/Git WorkSpace (main)
+
